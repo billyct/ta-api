@@ -1,0 +1,74 @@
+<div class="grid">
+    <div class="row">
+        <div class="span4 offset2">
+
+            <div class="page-control" data-role="page-control">
+                <!-- Responsive controls -->
+                <span class="menu-pull"></span> 
+                <div class="menu-pull-bar"></div>
+                <!-- Tabs -->
+                <ul>
+                    <li class="active"><a href="#signin">登录</a></li>
+                    <li><a href="#signup">注册</a></li>
+                </ul>
+                <!-- Tabs content -->
+                <div class="frames">
+                    <div class="social-buttons">
+                        <a href="<?php echo $this->sina_url ?>">
+                            <img src="<?php echo $this->basePath() ?>/images/32.png" />
+                        </a>
+                    </div>
+                    <div class="frame active" id="signin">
+                        <form  id="form-signin" class="form" method="post" action="<?php echo $this->url('user-signin')?>" >
+                            <div class="input-control text">
+                                <input name="username" id="input-username" type="text" placeholder="用户名" />
+                                <button class="btn-clear"></button>
+                            </div>
+
+                            <div class="input-control password">
+                                <input name="password" id="input-password" type="password" placeholder="密码"/>
+                                <button class="btn-reveal"></button>
+                            </div>
+
+                            <input type="hidden" name="url" id="url" value="<?php echo $this->request_uri ?>" />
+
+                            <div class="input-control">
+                                <input name="signin" id="btn-signin" type="submit" value="登录"/>
+                                <a href="javascript:void(0);" onclick="window.close();">取消</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="frame" id="signup">
+                        <form id="form-signup" class="form" method="post" action="<?php echo $this->url('user-signup')?>" >
+                            <div class="input-control text">
+                                <input name="username" id="input-username" type="text" placeholder="用户名" />
+                                <button class="btn-clear"></button>
+                            </div>
+
+                            <div class="input-control text">
+                                <input name="email" id="input-email" type="text" placeholder="Email" />
+                                <button class="btn-clear"></button>
+                            </div>
+
+                            <div class="input-control password">
+                                <input name="password" id="input-password" type="password" placeholder="密码"/>
+                                <button class="btn-reveal"></button>
+                            </div>
+
+                            <input type="hidden" name="url" id="url" value="<?php echo $this->request_uri ?>" />
+
+                            <div class="input-control">
+                                <input name="signup" id="btn-signup" type="submit" value="注册"/>
+                                <a href="javascript:void(0);" onclick="window.close();">取消</a>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
