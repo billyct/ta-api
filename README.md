@@ -9,4 +9,4 @@ TA
 安装
 ------------
 下载之后，doctrine 初始化 数据库，然后按照 Zf2 教程一样建立vhost ，修改配置文件在config文件夹里面
-enjoy it
+enjoy it 客户端在 https://github.com/billyct/ta
